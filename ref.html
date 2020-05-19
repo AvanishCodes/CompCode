@@ -12,6 +12,10 @@
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
       
     <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
     <style>
         #header{
             top: 0px;
@@ -52,7 +56,9 @@
             border: 2px solid mediumseagreen;
             /* display: flex; */
             padding: 100px;
-        }
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            color: aqua;        }
         .twitter-timeline{
             z-index: 6;
             /* margin-right: 20px; */
@@ -65,6 +71,24 @@
         h1{
             /* margin-top: 60px; */
             text-emphasis-color: red;
+        }
+        #below_nav{
+            background-color: green;
+            height: 50px;
+            width: 100vw;
+        }
+        #ref-para{
+            font-family: cursive;
+            
+        }
+        h1{
+            font-family: "Dancing Script", cursive;
+            text-align: center;
+            background-color: rgba(238, 12, 87, 0.479);
+            color: whitesmoke;
+            /* position: fixed; */
+            /* display: inline-flex; */
+            width: 100vw;
         }
     </style>
 </head>
@@ -121,7 +145,23 @@
         </nav> 
     </div>
     <!-- Content of the Reference Page -->
-    
+    <div id="below_nav"></div>
+    <div class="ref">
+        <h1>References</h1>
+        <div id="ref-para">
+            Though many texts are available in the market and on all over the internet, we strongly recommend you the following texts as the begginers of this field : 
+            <ol>
+                <li><a href="ref/Competitive Coding Book.pdf">Competitive Programming Handbook</a> by <a href="https://books.google.com/books/about/Guide_to_Competitive_Programming.html?id=vcGpzAEACAAJ&source=kp_author_description"> Antti Laaksonen</a></li>
+                    <p>This book offers the entry pass to the tough and interesting world of the Competitive Programming in the easiest way. The book has its own beauty that it is often recommend by almost every one who started learning the CP after going through this book even once. The best thing about it is that it can be completed in less than a month, even at a medium pace.</p>
+
+                <li><a href="ref/CP Book.pdf">Competitive Programming 3</a> by <a href="https://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf"> Steven & Felix Halim</a></li>
+                    <p>This book is another gem in the town. Written in a very concise and formal manner, it's easy to understand and easier to implement. </p>
+                    
+                <li>The famous book called <a href="ref/CLRS.pdf">Introduction to Algorithms</a> by CLRS, by <a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">MIT Press</a></li>
+                    <p>This is the most classic book of the typical Algorithms in the modern studies of Computer Science you'll see in the next few decades. This book is one of the most followed books all over the world for the study of Algorithms. The credibility of this book is unmatched.</p>
+            </ol>
+        </div>
+    </div>
     <!-- This div is only for social Media Handles -->
     <div class="social">
         Reach us at:
