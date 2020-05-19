@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Coding from Scratch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+      
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+      
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #header{
+            top: 0px;
+            left: 0px;
+            padding: 0%;
+            margin: 0px;
+            width: 100vw;
+            height: 60px;
+            position: static;;
+            font-size: 40px;
+            text-decoration: none;
+            background-color: red;
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            border-top: 1px solid salmon;
+        }
+        a{
+            text-decoration: none;
+        }
+        .navbar{
+            
+            margin: 0px;
+            position: fixed;
+            width: 100vw;
+            z-index: 10;
+        }
+        .footer{
+            position: static;
+            height: 40px;
+            width: 100vw;
+            background-color: cyan;
+            text-align: right;
+            text-align: end;
+            padding-right: 20px;
+        }
+        .social{
+            background-color: #fff;
+            border: 2px solid mediumseagreen;
+            /* display: flex; */
+            padding: 100px;
+        }
+        .twitter-timeline{
+            z-index: 6;
+            /* margin-right: 20px; */
+            padding: 100px;
+        }
+        .fb-page{
+            z-index: 6;
+            padding: 100px;
+        }
+        h1{
+            /* margin-top: 60px; */
+            text-emphasis-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+    <!-- <div id="header"><a href = "https://iiitsurat.ac.in">Competitive Coding from Scratch</a></div> -->
+    
+    <!-- Navigation Bar cum Logo display -->
+    <div>                 
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark"> 
+            <a class="navbar-brand" href="https://iiitsurat.ac.in"> 
+                Code<>
+            </a> 
+              
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapse_Navbar"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+              
+            <div class="collapse navbar-collapse" id="collapse_Navbar"> 
+                <ul class="navbar-nav"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li> 
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id = "navbardrop"      data-toggle="dropdown">Algorithms</a> 
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="algo/Greedy.html">Greedy</a> 
+                            <a class="dropdown-item" href="algo/dp.html">Dynamic Programming</a> 
+                            <a class="dropdown-item" href="algo/math.html">Mathematics</a> 
+                        </div>
+                    </li> 
+                    <li class="nav-item"><a class="nav-link" href="ds.html">Data Structures</a></li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Languages 
+                        </a>
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="lang/c.html">C/C++</a> 
+                            <a class="dropdown-item" href="lang/py.html">Python</a> 
+                            <a class="dropdown-item" href="lang/java.html">Java</a> 
+                        </div> 
+                    </li><li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Problems from Platforms
+                        </a>
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="ex/cc.html">CodeChef</a> 
+                            <a class="dropdown-item" href="ex/he.html">HackerEarth</a> 
+                            <a class="dropdown-item" href="ex/cf.html">CodeForces</a> 
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="ref.html">References</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="contri.html">Contributors</a></li> 
+                </ul> 
+            </div> 
+        </nav> 
+    </div>
+    <!-- Content of the Reference Page -->
+    
+    <!-- This div is only for social Media Handles -->
+    <div class="social">
+        Reach us at:
+        <br>
+        <!-- For facebook -->
+        <div class="fb-page" data-href="https://www.facebook.com/lcs.iiits/" data-tabs="timeline, events" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.comlcs.iiits/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lcs.iiits/">LCS IIIT Surat</a></blockquote></div>
+        <!-- For Twitter -->
+        <a class="twitter-timeline" data-width="500" data-height="500" data-dnt="true" href="https://twitter.com/IIITSurat?ref_src=twsrc%5Etfw">Tweets by IIITSurat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <!-- Footer of the Website -->
+    <div class="footer">
+        Website created and Maintained by : <a href = "https://www.linkedin.com/in/avanish-gupta-338919161/">Avanish Gupta</a>
+    </div>
+    <!-- Script written to make Navigation Bar Disappear after a scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+          } else {
+            document.getElementById("header").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>
