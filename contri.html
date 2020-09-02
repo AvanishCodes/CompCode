@@ -12,6 +12,19 @@
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
       
     <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        if (!localStorage.getItem('counter')) {
+            localStorage.setItem('counter', 0);
+        }
+        // document.querySelector('button').onclick = count;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            let counter = localStorage.getItem('counter');
+            counter++;
+            document.querySelector('#counting').innerHTML = counter;
+            localStorage.setItem('counter', counter);
+        })
+    </script>
     <style>
         #header{
             top: 0px;
@@ -138,6 +151,7 @@
     </div>
     <!-- Footer of the Website -->
     <div class="footer">
+        <p>You are visitor no: <span id="counting">0</span></p>
         Website created and Maintained by : <a href = "https://www.linkedin.com/in/avanish-gupta-338919161/">Avanish Gupta</a>
     </div>
     <!-- Script written to make Navigation Bar Disappear after a scroll -->
