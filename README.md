@@ -4,3 +4,5 @@ This has been created and being maintained by students of IIIT, Surat to guide s
 We advise you to use Laptop/Tablet/Desktop to view the website.
 Thanks
 IIIT, Surat
+
+The original code has been written by Avanish Gupta.
